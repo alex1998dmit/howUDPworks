@@ -1,0 +1,52 @@
+svg line {
+  fill: #000;
+  stroke: #000;
+  stroke-width: 1px;
+}
+
+.container {
+    padding-top: 30px;
+}
+
+#client-img {
+    width: 35%;
+}
+
+#server-img {
+    width: 65%;
+    margin-top: -20px;
+}
+
+.img-box {
+    width: 815px;
+    border-left: 4px solid black;
+    border-right: 5px solid black;
+}
+
+.arrow {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.state-sign {
+    padding: 5%
+    /* color: green; */
+}
+
+.arrow {
+    opacity: 0.1;
+    margin-bottom: -15%;
+}
+
+.arrow-second, .arrow-fourth {
+    transform: rotate(180deg);
+}
+
+.arrow-attributes {
+    margin-left: 50%;
+    opacity: 0;
+}
+
+#start-state-button {
+    /* padding: 40px; */
+}

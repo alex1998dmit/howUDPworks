@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <title>UDP</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="./public/img/client.png" alt="" id="client-img">
+                    </div>
+                    <div class="col-md-12">
+                        <div class="client-sign">
+                            <h5>Клиент</h5>
+                            <p id="clientId">IP-адрес:</p>
+                            <h6></h6>
+                        </div>
+                        <!-- <p>IP-адрес:</p>                        
+                        <p>Состояние: </p>
+                        <p>SEQ: </p>
+                        <p>CTL: </p>
+                        <p>ACK: </p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h4>DNS UDP</h4>
+                        </div>
+                        <div class="col-md-12 text-center" id="status-signs">
+                        </div>
+                        <div class="col-md-12">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">IP-SRC</th>
+                                        <th scope="col">IP-DST</th>
+                                        <th scope="col">SRC-PORT</th>
+                                        <th scope="col">DST-PORT</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- <tr>
+                                        <td class="table-src-ip"></td> 
+                                        <td class="table-dst-ip"></td>
+                                        <td class="table-src-port"></td>
+                                        <td class="table-dst-port"></td>
+                                    </tr>                                          -->
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col-md-12 text-center" id="start-state-button">
+                                    <button type="button" id="send-first-flag-button" class="btn btn-primary first-button">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 datagram" id="datagram">
+
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <img src="./public/img/server.png" alt="" id="server-img">
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-12">
+                            <div class="col-md-12">
+                            <div class="server-sign">
+                                <h5>DNS-сервер</h5>
+                                <p id="serverId">IP-адрес:</p>
+                                <h6></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="row" id="start-state-button">
+                    
+                </div>                
+                <div class="row" id="send-first-flags-button">
+                    
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+            <div class="col-md-7">
+                <!-- <svg width="720" height="52" viewBox="0 0 89.4 12.4">
+                    <line class="arrow-line" x1="0" y1="6.2" x2="159.6" y2="6.2"></line>
+                    <line class="arrow-head" x1="124.7" y1="0.7" x2="130.5" y2="6.5"></line>
+                    <line class="arrow-head" x1="124.7" y1="11.7" x2="130.5" y2="5.8"></line>
+                </svg> -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="img-box">
+                            <img src="./public/img/arrow-tiny.png" alt="" class="arrow arrow-first">
+                            <img src="./public/img/arrow-tiny.png" alt="" class="arrow arrow-second">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+
+            </div>
+            <div class="col-md-offset-1 col-md-2">
+                <div class="row">
+                    <div class="server-button">
+                
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <script src="./jquery/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./public/scripts.js"></script>
+</body>
+</html>
